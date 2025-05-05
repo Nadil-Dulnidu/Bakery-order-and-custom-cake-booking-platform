@@ -1,0 +1,10 @@
+P0001,White Bread,200.0,A classic loaf with a soft fluffy texture and a light crust ideal for sandwiches and toast.,bread,assets/images/White Bread.jpg
+P0002,Whole Wheat Bread,200.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,bread,assets/images/Whole Wheat Bread.jpg
+P0003,Multigrain Bread,250.0,This hearty bread incorporates various grains and seeds providing a complex flavor and a chewy texture.,bread,assets/images/Multigrain Bread.jpg
+P0004,Baguette,300.0,A staple in French cuisine the baguette is characterized by its long slender shape and crispy crust with a light and airy crumb inside.,bread,assets/images/Baguette.jpg
+P0005,Sourdough,270.0,Known for its tangy flavor sourdough is made through a fermentation process using natural yeast and bacteria resulting in a chewy texture and crisp crust.,bread,assets/images/Sourdough.jpg
+P0006,Ciabatta,350.0,An Italian bread with a rustic appearance ciabatta has a chewy crust and an open crumb structure making it perfect for sandwiches and paninis.,bread,assets/images/Ciabatta.jpg
+P0007,Rye Bread,300.0,Made with rye flour this bread has a dense texture and a deep earthy flavor often associated with traditional Eastern European cuisine.,bread,assets/images/Rye Bread.jpg
+P0008,Brioche,400.0,A rich buttery French bread with a tender crumb and a slightly sweet flavor often used for pastries desserts and gourmet sandwiches.,bread,assets/images/Brioche.jpg
+P0009,Focaccia,450.0,An Italian flatbread that's baked with olive oil and topped with herbs garlic and sometimes olives or tomatoes offering a flavorful and chewy experience.,bread,assets/images/Focaccia.jpg
+P0010,Pita Bread,375.0,A Middle Eastern staple pita is a round soft flatbread that puffs up during baking to create a pocket perfect for fillings and dips.,bread,assets/images/Pita Bread.jpg
