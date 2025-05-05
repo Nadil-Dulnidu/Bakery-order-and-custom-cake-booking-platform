@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class ReviewService {
 
-    public static final String filePath = "D:\\Java Programming\\JSP and Servlet\\Bakery Order and Custom Cake Booking\\data\\review.txt";
+    public static final String filePath = "D:\\Java Programming\\Cruds\\Bakery-order-and-custom-cake-booking-platform\\data\\review.txt";
 
     //save the review
     public boolean saveFeedback(Review review) {

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductService {
-    public static final String filePath = "D:\\Java Programming\\JSP and Servlet\\Bakery Order and Custom Cake Booking\\data\\product.txt";
+    public static final String filePath = "D:\\Java Programming\\Cruds\\Bakery-order-and-custom-cake-booking-platform\\data\\product.txt";
 
     //add new products to the file
     public boolean addProduct(Product product) {

@@ -9,8 +9,8 @@ import java.util.UUID;
 
 public class UserService {
     //file path
-    private static final String filePath = "D:\\Java Programming\\JSP and Servlet\\Bakery Order and Custom Cake Booking\\data\\user.txt";
-    private final static String adminFilePath = "D:\\Java Programming\\JSP and Servlet\\Bakery Order and Custom Cake Booking\\data\\admin.txt";
+    private static final String filePath = "D:\\Java Programming\\Cruds\\Bakery-order-and-custom-cake-booking-platform\\data\\user.txt";
+    private final static String adminFilePath = "D:\\Java Programming\\Cruds\\Bakery-order-and-custom-cake-booking-platform\\data\\admin.txt";
 
     //create user id
     public String createUserId(){

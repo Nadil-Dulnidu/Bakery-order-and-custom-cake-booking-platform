@@ -9,8 +9,8 @@ import java.util.List;
 
 public class AdminService {
 
-    private final static String filePath = "D:\\Java Programming\\JSP and Servlet\\Bakery Order and Custom Cake Booking\\data\\admin.txt";
-    private static final String userFilePath = "D:\\Java Programming\\JSP and Servlet\\Bakery Order and Custom Cake Booking\\data\\user.txt";
+    private final static String filePath = "D:\\Java Programming\\Cruds\\Bakery-order-and-custom-cake-booking-platform\\data\\admin.txt";
+    private static final String userFilePath = "D:\\Java Programming\\Cruds\\Bakery-order-and-custom-cake-booking-platform\\data\\user.txt";
 
     //display all registered users
     public ArrayList<User> getAllUsers() {
