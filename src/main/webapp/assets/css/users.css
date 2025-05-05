@@ -1,0 +1,206 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  color: var(--font-color-dark);
+  font-size: var(--font-size-xxsm);
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 200px;
+  flex: 1;
+  padding: 35px 20px;
+  transition: margin-left 0.3s;
+}
+
+.header-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--main-semibold);
+  margin-bottom: 20px;
+}
+
+/* Users Table */
+.users {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.users .filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.users .filters h2 {
+  font-size: 18px;
+}
+
+.users .filters div {
+  display: flex;
+  gap: 10px;
+}
+
+.users .filters select {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.users .filters button{
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 5px;
+}
+.users table form button{
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 5px;
+  color: #000;
+}
+.users table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users table th, .users table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.users table th {
+  font-weight: normal;
+  color: #888;
+}
+
+.users table td {
+  color: #333;
+}
+
+.users table select {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.users .remove a button{
+  background-color: #ffebee;
+  border-radius: 5px;
+  color: #c62828;
+  padding: 5px;
+}
+
+.users .pagination {
+  margin-top: 20px;
+  color: #888;
+  text-align: center;
+}
+
+.users .view-all {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.users .view-all button {
+  padding: 10px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .users table th, .users table td {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      width: 60px;
+  }
+
+  .main-content {
+      margin-left: 60px;
+  }
+
+  .header input {
+      width: 200px;
+  }
+
+  .users .filters {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .users .filters div {
+      width: 100%;
+      justify-content: space-between;
+  }
+
+  .users table th, .users table td {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+      border-right: none;
+      border-bottom: 1px solid #e0e0e0;
+  }
+
+  .sidebar .logo {
+      margin: 0;
+  }
+
+  .sidebar ul {
+      display: flex;
+      gap: 20px;
+  }
+
+  .sidebar ul li {
+      margin: 0;
+  }
+
+  .sidebar .logout {
+      position: static;
+  }
+
+  .main-content {
+      margin-left: 0;
+      padding: 10px;
+  }
+
+  .header {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .header input {
+      width: 100%;
+  }
+
+  .users table th, .users table td {
+      padding: 5px;
+  }
+
+  .users table th:nth-child(2), .users table td:nth-child(2),
+  .users table th:nth-child(5), .users table td:nth-child(5),
+  .users table th:nth-child(6), .users table td:nth-child(6) {
+      display: none; /* Hide Username, Password, and Role columns on small screens */
+  }
+}

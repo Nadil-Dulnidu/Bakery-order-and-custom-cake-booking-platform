@@ -1,0 +1,122 @@
+.reg-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.reg-image{
+    width: 33%;
+    height: 100vh;
+}
+.reg-image img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.reg-section{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.reg-main-title{
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: var(--font-size-sm);
+    font-family: var(--second-font), sans-serif;
+    color: var(--button-color);
+    margin-right: 20px;
+}
+
+.reg-main-title a{
+    color: var(--button-color);
+}
+
+.reg-box{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--primary-color);
+    font-size: var(--font-size-xxsm);
+}
+.reg-form{
+    width: 350px;
+    margin: auto;
+}
+
+.reg-title{
+    font-size: 2.7rem;
+    font-weight: var(--main-semibold);
+    margin-bottom: 20px;
+}
+.reg-message-area{
+    color: #c70c0c;
+}
+
+.reg-form input[type=text], input[type=password],input[type=email]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--second-color-1);
+    font-size: 1rem;
+    background-color: #f4e5d9;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+.reg-username label,
+.reg-password label,
+.reg-name label,
+.reg-email label{
+    font-weight: var(--main-medium);
+    font-size: var(--font-size-xxsm);
+}
+
+.reg-password,
+.reg-username,
+.reg-name,
+.reg-email{
+    margin-top: 10px;
+}
+
+.reg-password input,
+.reg-username input,
+.reg-name input,
+.reg-email input{
+    margin-top: 5px;
+}
+
+
+.reg-form input[type=submit]{
+    width: 100%;
+    height: 40px;
+    font-size: var(--font-size-xsm);
+    font-family: var(--main-font), sans-serif;
+    background-color: var(--button-outline);
+    color: #fff;
+    border: none;
+    font-weight: var(--main-medium);
+    border-radius: 30px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.reg-btn input:active{
+    background-color: var(--button-hover-color);
+}
+
+.sign-in-btn{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sign-in-btn a{
+    color: black;
+}
+
+
+
+

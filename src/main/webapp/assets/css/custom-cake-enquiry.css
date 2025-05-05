@@ -1,0 +1,110 @@
+main{
+    margin: 80px 25px 0 25px;
+    color: var(--primary-color);
+}
+.main-title{
+    font-weight: var(--main-semibold);
+    font-size: var(--font-size-mmd);
+    color: var(--font-color-dark);
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 10px auto;
+    gap: 10px;
+}
+form div{
+    margin-top: 6px;
+}
+form .input-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+form .input-1 div input{
+    width: 340px;
+}
+form label{
+    font-size: 1rem;
+}
+form .input input,textarea{
+    width: 100%;
+    border-radius: 30px;
+    height: 36px;
+    border: 1px solid var(--second-color-1);
+    background-color: #f4e5d9;
+    padding: 10px;
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+form .input input::placeholder,
+textarea::placeholder{
+    color: var(--primary-color);
+    opacity: 0.7;
+    font-size: 1rem;
+}
+form input:focus{
+    border: none
+}
+form .image-upload{
+    width: 150px;
+    height: 36px;
+    background-color: #f4e5d9;
+    position: relative;
+    border: 1px solid var(--second-color-1);
+    border-radius: 30px;
+    margin-top: 15px;
+}
+form .image-upload label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form .image-upload input{
+    opacity: 0;
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form textarea{
+    height: 100px;
+    border-radius: 25px;
+    font-family: var(--main-font), sans-serif;
+}
+.star{
+    color: #c70c0c;
+}
+.btn{
+    align-self: flex-end;
+    margin: 10px 0;
+}
+.submit-btn{
+    padding: 9px 25px;
+    font-size: var(--font-size-xxsm);
+    border-radius: 30px;
+    font-weight: var(--main-medium);
+    color: #fff;
+    background-color: var(--button-outline);
+}
+.date input::-webkit-calendar-picker-indicator{
+    opacity: 0.7;
+
+}
+@media (max-width: 735px) {
+    form .input-1{
+        flex-direction: column;
+    }
+    form .input-1 div input{;
+        width: 100%;
+    }
+}
+
