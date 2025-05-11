@@ -19,7 +19,7 @@ public class AdminService {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 String[] user = line.split(",");
-                User user1 = new User(user[0],user[1],user[2],user[3],user[4],user[5]);
+                User user1 = new User(user[0],user[1],user[2],user[3],user[4]);
                 users.add(user1);
             }
         }catch(IOException e){
@@ -31,7 +31,7 @@ public class AdminService {
     //add a new admin
     public boolean addNewAdmin(Admin admin) {
         try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filePath,true))) {
-            bufferedWriter.write(admin.getUsername()+","+admin.getPassword());
+            bufferedWriter.write(admin.getUsername()+","+admin.getPassword()+","+admin.getRole());
             bufferedWriter.newLine();
             bufferedWriter.close();
             return true;

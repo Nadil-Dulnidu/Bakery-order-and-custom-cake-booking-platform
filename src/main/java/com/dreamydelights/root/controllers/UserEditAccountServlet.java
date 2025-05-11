@@ -42,7 +42,7 @@ public class UserEditAccountServlet extends HttpServlet {
                 boolean isUpdated = userService.updateUser(oldUser.getEmail(), newName, newUserName, newPassword);
 
                 if (isUpdated) {
-                    User updateUser = new User(oldUser.getUserId(), newName, newUserName, oldUser.getEmail(), newPassword, oldUser.getRole());
+                    User updateUser = new User(oldUser.getUserId(), newName, newUserName, oldUser.getEmail(), newPassword);
                     session.setAttribute("user", updateUser);
                     response.sendRedirect("profile.jsp?success=Account updated successfully!");
                 }else{

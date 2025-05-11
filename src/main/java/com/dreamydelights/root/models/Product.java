@@ -2,12 +2,12 @@ package com.dreamydelights.root.models;
 
 public class Product {
 
-    String productId;
-    String productName;
-    double productPrice;
-    String description;
-    String productCategory;
-    String productImage;
+    protected String productId;
+    protected String productName;
+    protected double productPrice;
+    protected String description;
+    protected String productCategory;
+    protected String productImage;
 
     public String getProductId() {
         return productId;

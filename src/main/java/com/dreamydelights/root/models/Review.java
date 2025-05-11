@@ -1,7 +1,8 @@
 package com.dreamydelights.root.models;
 
-public class Review extends Product{
+public class Review{
 
+    private final String productId;
     private final String userId;
     private final String name;
     private final String message;
@@ -9,7 +10,7 @@ public class Review extends Product{
     private final String date;
 
     public Review(String productId, String userId, String name, String message, double rating, String date) {
-        super(productId);
+        this.productId = productId;
         this.userId = userId;
         this.name = name;
         this.message = message;
@@ -35,5 +36,9 @@ public class Review extends Product{
 
     public String getDate() {
         return date;
+    }
+
+    public String getProductId() {
+        return productId;
     }
 }
