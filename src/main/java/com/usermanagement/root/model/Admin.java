@@ -1,20 +1,13 @@
 package com.usermanagement.root.model;
 
-public class Admin {
-    private String username;
-    private String password;
+public class Admin extends User {
 
     public Admin(String username, String password) {
-        this.username = username;
-        this.password = password;
+        super(username, password, "admin");
     }
 
-    public String getUsername() {
-        return username;
+    @Override
+    public String getRole() {
+        return "admin";
     }
-
-    public String getPassword() {
-        return password;
-    }
-
 }

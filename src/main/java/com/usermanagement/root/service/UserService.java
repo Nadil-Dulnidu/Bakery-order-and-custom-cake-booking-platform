@@ -10,8 +10,8 @@ import java.util.UUID;
 
 public class UserService {
     //file path
-    private final static String filePath = " "; //set your file path location
-    private final static String adminFilePath = " "; //set your file path location
+    private static final String filePath = "D:\\Java Programming\\Cruds\\Bakery-order-and-custom-cake-booking-platform\\data\\user.txt";
+    private final static String adminFilePath = "D:\\Java Programming\\Cruds\\Bakery-order-and-custom-cake-booking-platform\\data\\admin.txt";
 
     //create user id
     public String createUserId(){
@@ -32,9 +32,8 @@ public class UserService {
 
     //grab all user details
     public void getRegisterDetails(String name, String username, String email, String password) {
-        String role = "user";
         String userId = createUserId();
-        User user = new User(userId, name, username, email, password, role);
+        User user = new User(userId, name, username, email, password);
         registerUser(user);
     }
     //register a user
@@ -70,7 +69,7 @@ public class UserService {
             while ((line = bufferedReader.readLine()) != null) {
                 String[] user = line.split(",");
                 if(user.length == 6 && user[3].equals(email) && user[4].equals(password)){
-                    return new User(user[0], user[1], user[2], email, password, user[5]);
+                    return new User(user[0], user[1], user[2], email, password);
                 }
             }
         }catch (IOException e){
@@ -96,7 +95,7 @@ public class UserService {
         return null;
     }
 
-    //delete user account
+    //delete user account (user side)
     public boolean deleteUser(String userId){
 
         List<String> users = new ArrayList<>();
