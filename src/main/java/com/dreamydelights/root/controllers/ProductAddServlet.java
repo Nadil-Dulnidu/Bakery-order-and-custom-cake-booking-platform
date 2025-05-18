@@ -14,7 +14,12 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-@MultipartConfig @WebServlet("/add-product")
+@MultipartConfig(
+        fileSizeThreshold = 1024 * 1024 * 2,
+        maxFileSize = 1024 * 1024 * 10,
+        maxRequestSize = 1024 * 1024 * 50
+)
+@WebServlet("/add-product")
 public class ProductAddServlet extends HttpServlet {
     //image upload file path
     private static final String uploadDirectory = "assets/images";
@@ -52,7 +57,7 @@ public class ProductAddServlet extends HttpServlet {
         boolean success = productService.addProduct(product);
 
         if (success) {
-            response.sendRedirect("admin-products?message=Product+added+successfully");
+            response.sendRedirect("products?message=Product+added+successfully");
         }else{
             request.setAttribute("error", "Something went wrong! Please try again.");
             doGet(request, response);

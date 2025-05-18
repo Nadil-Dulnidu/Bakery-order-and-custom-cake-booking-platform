@@ -57,7 +57,7 @@ public class OrderCreateServlet extends HttpServlet {
         String action = request.getParameter("action");
 
         if(action.equalsIgnoreCase("place")){
-            String orderId = orderService.createOrder(userId,totalPrice,cartArrayList,customerEmail,customerFirstName,customerLastName,customerPhone,customerAddress,customerCity,customerPostalCode);
+            orderService.createOrder(userId,totalPrice,cartArrayList,customerEmail,customerFirstName,customerLastName,customerPhone,customerAddress,customerCity,customerPostalCode);
             cartService.clearCart(request);
             response.sendRedirect("order-placed.jsp");
         }else if(action.equalsIgnoreCase("cancel")){

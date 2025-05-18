@@ -33,7 +33,7 @@
     ProductService productService = new ProductService();
     AdminService adminService = new AdminService();
 
-    ArrayList<Order> allOrders = orderService.getAllOrdersAsArrayList();
+    ArrayList<Order> allOrders = orderService.getAllOrders();
     ArrayList<Order> recentOrders = orderService.getRecentOrders(allOrders);
 
     ArrayList<CustomCake> allRequests = customCakeService.displayAllOrder();

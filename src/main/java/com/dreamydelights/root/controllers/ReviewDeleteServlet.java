@@ -24,13 +24,10 @@ public class ReviewDeleteServlet extends HttpServlet {
         String productId = request.getParameter("productId");
 
         if(reviewService.deleteAReview(userId, productId)) {
-            return;
-
+            response.sendRedirect("/product?id="+productId);
         }else{
             request.setAttribute("message", "something went wrong");
+            request.getRequestDispatcher("/product?id="+productId).forward(request, response);
         }
-
-        request.getRequestDispatcher("/product?id="+productId).forward(request, response);
-        response.sendRedirect("/product?id="+productId);
     }
 }

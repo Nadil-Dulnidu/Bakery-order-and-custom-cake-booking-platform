@@ -12,7 +12,7 @@ import com.dreamydelights.root.services.OrderService;
 import java.io.IOException;
 
 @WebServlet("/cancel-order")
-public class OrderCancelServlet extends HttpServlet {
+public class OrderDeleteUserServlet extends HttpServlet {
 
     private final OrderService orderService = new OrderService();
 
@@ -29,12 +29,10 @@ public class OrderCancelServlet extends HttpServlet {
 
         boolean isCancelled = orderService.cancelOrder(orderId, user.getUserId());
 
-
         if (isCancelled) {
             response.sendRedirect("profile.jsp?message=Order%20Cancelled%20Successfully");
         } else {
             response.sendRedirect("profile.jsp?message=Order%20Cancelled%20Failed");
         }
-
     }
 }

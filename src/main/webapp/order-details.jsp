@@ -138,7 +138,7 @@
                             </select>
                             <button type="submit">Update</button>
                         </form>
-                        <a href=""><button class="contact">Remove</button></a>
+                        <a href="delete-admin-order?id=<%=order.getOrderId()%>"><button class="contact">Remove</button></a>
                     </div>
                 </div>
             </div>

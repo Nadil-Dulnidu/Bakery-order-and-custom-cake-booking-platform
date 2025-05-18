@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class CartService {
 
     //add items to the cart
-    public void addToCart(HttpServletRequest request, Cart cart) throws IOException {
+    public void addToCart(HttpServletRequest request, Cart cart) {
         HttpSession session = request.getSession();
         ArrayList<Cart> cartList = (ArrayList<Cart>) session.getAttribute("cartList");
 
@@ -29,7 +29,6 @@ public class CartService {
         if (!exists) {
             cartList.add(cart);
         }
-
     }
 
     //remove the items form the cart
@@ -98,5 +97,4 @@ public class CartService {
             return 0;
         }
     }
-
 }

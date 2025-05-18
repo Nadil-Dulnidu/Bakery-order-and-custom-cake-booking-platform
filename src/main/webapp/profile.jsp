@@ -40,7 +40,7 @@
         if(status == null){
             status = "all";
         }
-        ArrayList<Order> orders = orderService.getAllOrdersByUser(user.getUserId(),status);
+        ArrayList<Order> orders = orderService.getAllOrders(user.getUserId(),status);
         int quantity = cartService.getCartQuantity(cartItems);
 
     %>

@@ -8,3 +8,14 @@ P0007,Rye Bread,300.0,Made with rye flour this bread has a dense texture and a d
 P0008,Brioche,400.0,A rich buttery French bread with a tender crumb and a slightly sweet flavor often used for pastries desserts and gourmet sandwiches.,bread,assets/images/Brioche.jpg
 P0009,Focaccia,450.0,An Italian flatbread that's baked with olive oil and topped with herbs garlic and sometimes olives or tomatoes offering a flavorful and chewy experience.,bread,assets/images/Focaccia.jpg
 P0010,Pita Bread,375.0,A Middle Eastern staple pita is a round soft flatbread that puffs up during baking to create a pocket perfect for fillings and dips.,bread,assets/images/Pita Bread.jpg
+P0011,Cannoli (Italian),300.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Cannoli (Italian).jpg
+P0012,Galette,400.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Galette.jpg
+P0013,Briche,200.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Brioche.jpg
+P0014,Choux Pastry,250.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Choux Pastry.jpg
+P0015,Mille-feuille (Napolean),300.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Mille-feuille (Napoleon).jpg
+P0016,Turnover,400.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Turnover.jpg
+P0017,Strudel,500.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Strudel.jpg
+P0019,Puff Pastry,300.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Puff Pastry.jpg
+P0020,Tart,300.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Tart.jpg
+P0021,Danish Pastry,400.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Danish Pastry.jpg
+P0022,Croissiant,500.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Croissant.jpg

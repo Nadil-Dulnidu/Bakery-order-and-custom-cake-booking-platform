@@ -139,7 +139,7 @@
         <div class="modal-content">
             <span class="close js-close">&times;</span>
             <h2>Add New Product</h2>
-            <form action="add-product" method="post">
+            <form action="add-product" method="post" enctype="multipart/form-data">
                 <label for="productId">Product ID</label>
                 <input type="text" id="productId" name="id" placeholder="Eg. P0001" required>
                 <label for="productName">Product Name</label>

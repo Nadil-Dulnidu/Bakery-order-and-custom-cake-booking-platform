@@ -12,12 +12,13 @@ import java.io.IOException;
 
 @WebServlet("/order-details")
 public class OrderDetailsServlet extends HttpServlet {
+
     private final OrderService orderService = new OrderService();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String orderId = request.getParameter("id");
-        Order orders = orderService.getOrderByOrderId(orderId);
+        Order orders = orderService.getOrderById(orderId);
 
         request.setAttribute("orders", orders);
         request.getRequestDispatcher("/order-details.jsp").forward(request, response);
