@@ -18,4 +18,3 @@ P0017,Strudel,500.0,Made from whole grain wheat flour this bread offers a denser
 P0019,Puff Pastry,300.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Puff Pastry.jpg
 P0020,Tart,300.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Tart.jpg
 P0021,Danish Pastry,400.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Danish Pastry.jpg
-P0022,Croissiant,500.0,Made from whole grain wheat flour this bread offers a denser texture and a richer nuttier flavor compared to white bread.,pastry,assets/images/Croissant.jpg

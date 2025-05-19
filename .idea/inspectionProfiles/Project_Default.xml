@@ -20,6 +20,7 @@
         <language minSize="177" name="Java" />
       </Languages>
     </inspection_tool>
+    <inspection_tool class="HtmlFormInputWithoutLabel" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JavaExistingMethodCanBeUsed" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="JavadocDeclaration" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="UNCHECKED_WARNING" enabled="false" level="WARNING" enabled_by_default="false" />

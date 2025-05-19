@@ -82,7 +82,7 @@
 
         <div class="form-container">
             <h2>Edit Product</h2>
-            <form id="editProductForm" action="" method="post">
+            <form id="editProductForm" action="update-product" method="post">
                 <input type="hidden" name="id" value="<%=product.getProductId()%>">
                 <input type="hidden" name="image" value="<%=product.getProductImage()%>">
                 <label for="productName">Product Name</label>
@@ -106,15 +106,6 @@
 
                 <label for="description">Description</label>
                 <textarea id="description" name="description"><%=product.getDescription()%></textarea>
-
-<%--                <label for="productImage">Product Image</label>--%>
-<%--                <div class="file-input-wrapper">--%>
-<%--                    <input type="file" id="productImage" name="productImage" accept="image/jpeg, image/png, image/jpg">--%>
-<%--                    <label for="productImage" class="file-input-label">--%>
-<%--                        <i class="fas fa-image"></i> Update Image--%>
-<%--                    </label>--%>
-<%--                    <span class="file-name" id="fileName">No file chosen</span>--%>
-<%--                </div>--%>
 
                 <button type="submit">Update Product</button>
             </form>
