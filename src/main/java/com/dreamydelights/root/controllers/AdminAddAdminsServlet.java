@@ -11,7 +11,7 @@ import com.dreamydelights.root.services.AdminService;
 import java.io.IOException;
 
 @WebServlet("/add-admin")
-public class AdminAddAdminsServlet extends HttpServlet {
+public class  AdminAddAdminsServlet extends HttpServlet {
     private final AdminService adminService = new AdminService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

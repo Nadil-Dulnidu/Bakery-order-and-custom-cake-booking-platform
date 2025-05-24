@@ -89,7 +89,7 @@
                 <div class="order-details">
                     <div><%=cart.getProductName()%></div>
                     <div><%=cart.getCartQuantity()%> pcs</div>
-                    <div><%=PriceString.StringFormat(cartService.getDeliveryCost())%></div>
+                    <div><%=PriceString.StringFormat(cart.getProductPrice() * cart.getCartQuantity())%></div>
                 </div>
                 <%
                         }

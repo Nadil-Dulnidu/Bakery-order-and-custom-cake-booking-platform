@@ -132,7 +132,7 @@
                             </select>
                             <button type="submit">Update</button>
                         </form>
-                        <button class="contact" type="submit">Remove</button>
+                        <a href="delete-cake-enquiry?id=<%=cake.getCakeId()%>"><button class="contact">Remove</button></a>
                     </div>
                 </div>
             </div>

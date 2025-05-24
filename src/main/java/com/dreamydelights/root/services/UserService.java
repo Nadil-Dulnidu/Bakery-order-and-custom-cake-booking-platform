@@ -94,7 +94,7 @@ public class UserService {
         return null;
     }
 
-    //delete user account (user side)
+    //delete user account
     public boolean deleteUser(String userId){
 
         List<String> users = new ArrayList<>();

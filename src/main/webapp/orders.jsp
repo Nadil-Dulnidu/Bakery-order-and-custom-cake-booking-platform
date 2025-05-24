@@ -110,7 +110,7 @@
                         if(orders != null){
                             while (!orders.isEmpty()){
                                 Order order = orders.remove();
-                    %>
+                                assert order != null;%>
                     <tr>
                         <td><%=order.getOrderId()%></td>
                         <td><%=order.getCustomerFirstName()%> <%=order.getCustomerLastName()%></td>

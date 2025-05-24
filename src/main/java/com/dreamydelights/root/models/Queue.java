@@ -1,10 +1,11 @@
 package com.dreamydelights.root.models;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public final class Queue {
 
-    ArrayList<Order> queueArray = new ArrayList<>();
+    List<Order> queueArray = new ArrayList<>();
 
     public boolean isEmpty() {
         return queueArray.isEmpty();
@@ -41,5 +42,4 @@ public final class Queue {
             System.out.println(order + " ");
         }
     }
-
 }

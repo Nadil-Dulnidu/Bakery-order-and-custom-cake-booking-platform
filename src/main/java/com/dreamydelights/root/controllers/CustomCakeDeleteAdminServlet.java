@@ -20,12 +20,11 @@ public class CustomCakeDeleteAdminServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String cakeId = request.getParameter("cakeId");
+        String cakeId = request.getParameter("id");
 
         if(cakeId != null){
             cakeDao.deleteCakeOrder(cakeId);
+            response.sendRedirect("custom-cake-requests");
         }
-
-        response.sendRedirect("/custom-cake-enquiries");
     }
 }
